@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1380cd48-c4c7-49b9-9740-dc90b5f3c9e7" name="Default Changelist" comment="" />
+    <list default="true" id="1380cd48-c4c7-49b9-9740-dc90b5f3c9e7" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/jasmine-node/spec/HelloWorldSpec.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/jasmine-node/spec/HelloWorldSpec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/jasmine-node/src/HelloWorld.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/jasmine-node/src/HelloWorld.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -22,6 +26,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -32,11 +37,41 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1602139791448</updated>
-      <workItem from="1602139792848" duration="327000" />
+      <workItem from="1602139792848" duration="7215000" />
     </task>
+    <task id="LOCAL-00001" summary="init commit">
+      <created>1602140372646</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1602140372646</updated>
+    </task>
+    <task id="LOCAL-00002" summary="session 1">
+      <created>1602149312866</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1602149312866</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="init commit" />
+    <MESSAGE value="session 1" />
+    <option name="LAST_COMMIT_MESSAGE" value="session 1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="-1350" y="97" key="CommitChangelistDialog2" timestamp="1602149312318">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="-1350" y="97" key="CommitChangelistDialog2/0.0.1280.680/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1602149312318" />
+    <state x="-1368" y="253" key="Vcs.Push.Dialog.v2" timestamp="1602149316403">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="-1368" y="253" key="Vcs.Push.Dialog.v2/0.0.1280.680/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1602149316403" />
   </component>
 </project>

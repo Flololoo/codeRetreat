@@ -1,10 +1,37 @@
 class Game{
-  constructor(score = 0, bonus = 0, ) {
+  constructor(score = 0, pins = 10, rolls = 2, frames = 10) {
     this.score = score;
-    this.bonus = bonus;
+    this.bonus = 0;
+    this.numberOfFrames = frames;
 
     this.pins = 10;
     this.rolls = 2;
+
+    this.frames = [];
+  }
+
+  roll(){
+    if(this.frames.length === this.frames){
+      //TODO: end game.
+      this.result()
+      console.log(this.score);
+    }else{
+      if(this.frames[this.frames.length -1].rolls === 0){
+        this.frames.push = this.addframe();
+      }
+
+      let min = 0;
+      let max = 10;
+      let rolledPins = (Math.random() * (max - min)) + min;
+
+      this.frames[this.frames.length -1].roll(rolledPins);
+    }
+  }
+
+  result(){
+    for(let frame in this.frames){
+      this.score += frame.points;
+    }
   }
 
   get score(){
@@ -21,32 +48,51 @@ class Game{
     this.bonus = value;
   }
 
-  Frames(){
-    new Frame(this.bonus, this.score, [this.pins, this.rolls]);
+  addframe(){
+    let frame = new Frame(this.bonus, this.score, [this.pins, this.rolls]);
+    return frame;
   }
 
 }
 
 class Frame{
-  constructor(bonus, score, [pins = 10, rolls = 2]){
+  constructor(bonus, score = 0, [pins = 10, rolls = 2]){
     this.bonus = bonus;
     this.score = score;
     this.pins = new Pin(pins);
     this.rolls = new Roll(rolls);
   }
-  
+
+  get rolls(){
+    return this.rolls.rolls;
+  }
+
+  get points(){
+    return this.score;
+  }
+
   decrease(value){
     this.pins.decrease(value);
     this.rolls.decrease();
+
+    if(this.bonus > 0){
+      this.bonus -= 1;
+    }
   }
 
   updateScore(points){
-
     this.score += points;
   }
   
-  roll(){
-    
+  roll(value){
+    this.decrease(value);
+
+    let points = value;
+    if(this.bonus > 0){
+      points *= 2;
+    }
+
+    this.updateScore(points);
   }
 }
 
@@ -67,6 +113,10 @@ class Roll{
   decrease(){
     this.rolls -=1;
   }
+
+  get rolls(){
+    return this.rolls;
+  }
 }
 
 class HelloWorld {
@@ -75,4 +125,4 @@ class HelloWorld {
   }
 }
 
-module.exports = HelloWorld;
+module.exports = Game;

@@ -1,6 +1,6 @@
-const HelloWorld = require('../src/HelloWorld');
+const Game = require('../src/HelloWorld');
 
-describe('HelloWorld', () => {
+/*describe('HelloWorld', () => {
   describe('#greet', () => {
     it('returns the classic hello world', () => {
       const expectedGreet = 'Hello, world!';
@@ -8,9 +8,13 @@ describe('HelloWorld', () => {
       expect(HelloWorld.greet()).toEqual(expectedGreet);
     });
   });
-});
+});*/
 
 
 describe('Game', () => {
-  new Game()
+  let game = new Game();
+  fit('tests the initial number of frames', () => {
+
+    expect(game.score.toEqual(0));
+  });
 });
