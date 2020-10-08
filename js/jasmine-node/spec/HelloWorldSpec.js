@@ -9,3 +9,8 @@ describe('HelloWorld', () => {
     });
   });
 });
+
+
+describe('Game', () => {
+  new Game()
+});
